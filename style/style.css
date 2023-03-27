@@ -1,0 +1,157 @@
+/* Default style choices; font family, line height, text color, background color. */
+* {
+    background-color: aquamarine;
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* H1 formating for the header, this creates a white box around it, changes text size to 64px, centering, text color. */
+h1 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: green;
+    font-size: 64px;
+}
+
+/* H2 formating for the sub-heading, this adds a thin lime green banner, changes the size of text, centers. */
+h2 {
+    width: 100%;
+    height: 35px;
+    background-color: lightgreen;
+    font-size: 24px;
+}
+
+/* sets default for all nav sections, primarly to impliment the table of contents. */
+
+nav,
+header {
+    display: flexbox;
+    flex-direction: row;
+    background-color: lightgreen;
+    margin-bottom: 50px;
+}
+
+/* spaces the headers from the image boxes. */
+header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* adjust location of the <a> elements */
+nav a{
+    padding-right: 35px;
+
+}
+
+/* moves <p> tag over and changes the background-color to white. */
+p {
+    margin: 25px;
+    background-color: white;
+}
+
+/* sets the image boxes for the smaller two website boxes. */
+.image_boxes {
+    display: flexbox;
+    padding: 60x;
+    width: 250px
+}
+
+/* sets the image size of the image inside the box. */
+.image_boxes img {
+    border: solid black;
+    width: 100%;
+    height: 100%;
+}
+
+/* sets size of the image box for the recent picture. */
+.image_boxes_portrait {
+    display: flexbox;
+    padding: 60x;
+    width: 250px
+}
+
+/* sets the image size. */
+.image_boxes_portrait img {
+    border: solid black;
+    width: 50%;
+    height: auto;
+}
+
+/* groups images and spaces the box out */
+.group_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+    border-style: solid black;
+    border-width: 3px;
+}
+
+/* groups the large image and spaces it out. */
+.group_img_large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    border-style: solid black;
+    border-width: 3px;
+    margin: auto;
+}
+
+/* large image box. */
+.image_boxes_large {
+    display: flexbox;
+    padding: 60x;
+    width: 450px;
+    height: auto;
+}
+
+/* sets image size for the large image box. */
+.image_boxes_large img {
+    width: 100%;
+    height: auto;
+    border: solid;
+}
+
+/* changes the size of the H1 element if you adjust screen height */
+@media screen and (max-height: 700px) {
+    h1{
+        font-size: 24px;
+    }
+}
+
+/* changes the size of the image boxes if you adjust the screen width. */
+@media screen and (max-height: 520px) {
+    .image_boxes_large {
+            display: flexbox;
+            padding: 30x;
+            width: 50px;
+            height: auto;   
+    }
+    .image_boxes {
+        display: flexbox;
+            padding: 25x;
+            width: 30px;
+            height: auto;  
+    }
+    .image_boxes_portrait {
+        display: flexbox;
+        padding: 25x;
+        width: 45px
+    }
+    header {
+        font-size: 8px
+    }
+    .group_img_large {
+        height: 30vh;
+        margin-bottom:35px;
+        margin-top:35px;
+    }
+}
