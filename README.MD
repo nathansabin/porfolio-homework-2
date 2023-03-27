@@ -9,13 +9,14 @@ Learning how to employ more profession elements of CSS.
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 To be able to build a simple portfolio, and be able to receive criticism.
 - What problem does it solve?
-Creating a way to show to employer what the user is cappiable of
+Creating a way to show to employer what the user is capable of.
 - What did you learn?
 I got far better at understanding of how to adjust flexboxes, to link parts of the same webpage, and adjust the screen when the size is changed.
 
 ## Usage
 
 Go to this link to see the website
+https://nathansabin.github.io/porfolio-homework-2/ 
 
 ![alt text](images/portfolio_website.png)
 
